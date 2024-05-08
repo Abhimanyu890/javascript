@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="background-color: #573030;">Hiii , This is Abhimanyu Singh </h1>
+    
+</body>
+<script>
+    const requestUrl = 'https://https://api.github.com/users/Abhimanyu890'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl)
+    xhr.onreadystatechange = function(){
+      
+    console.log(xhr.readyState);
+    if(xhr.readyState === 4){
+        const data = JSON.parse(this.responseText)
+        console.log(typeof data);
+        console.log(data.followers);
+    }
+}
+    xhr.send();
+</script>
+</html>

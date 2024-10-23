@@ -7,6 +7,11 @@ accountCity = "Motihari"
 console.log(accountId);
 console.table([accountEmail,accountId,accountPassword,accountCity]);
 
+/*
+Prefer not to use var 
+beacuse of issue in block scope and functional scope
+*/
+
 
 // var a=12;
 // var a="b";
